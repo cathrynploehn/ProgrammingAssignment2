@@ -30,9 +30,8 @@ cacheSolve <- function(x, ...) {
     return(inv)
   }
   
+  ## Calculate, set, and return inverse of 'x'
   data <- x$get()
-  
-  ## Calculate and return inverse of 'x'
   inv <- solve(data)
   x$setinverse(inv)
   inv
